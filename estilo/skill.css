@@ -1,0 +1,85 @@
+.skill-main {
+  background: #1b1b1b;
+  color: #f1f1f1;
+  padding: 20px 40px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 500px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.skill-container h2 {
+  font-size: 4rem;
+  margin: 0px;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+.skill-container p {
+  margin: 0px;
+  width: 40ch;
+  font-size: 1.5rem;
+  grid-column: 1;
+  align-self: start;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.content-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0px;
+  grid-column: 2;
+  grid-row: -3 / -1;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-skill img {
+  max-width: 15%;
+}
+
+@media (max-width: 800px) {
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .skill-container h2 {
+    font-size: 4rem;
+    margin: 0px;
+    padding: 20px 0px;
+    align-self: center;
+    text-transform: uppercase;
+  }
+
+  .skill-container p {
+    margin: 0px;
+    width: 40ch;
+    font-size: 1.5rem;
+    grid-column: 1;
+    align-self: center;
+    text-align: center;
+  }
+
+  .content-skill {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 0px;
+
+  }
+
+  .content-skill img {
+    max-width: 15%;
+    min-width: 20%;
+  }
+}

@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background: #1b1b1b;
+}
+
+.header-container{
+  max-width: 700px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  ul {
+    padding: 0px;
+  }
+}
